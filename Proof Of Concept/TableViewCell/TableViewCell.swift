@@ -30,11 +30,11 @@ class TableViewCell: UITableViewCell {
     // image
     let img: UIImageView =  {
         let img = UIImageView()
-        img.backgroundColor = .green
         img.contentMode = .scaleAspectFill
         img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 13
         img.clipsToBounds = true
+        img.image = UIImage.init(named: "PlaceHolder")
         return img
     }()
         
@@ -68,7 +68,7 @@ class TableViewCell: UITableViewCell {
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.img.image = nil
+        self.img.image = UIImage.init(named: "PlaceHolder")
         // Set cell to initial state here, reset or set values
     }
 }

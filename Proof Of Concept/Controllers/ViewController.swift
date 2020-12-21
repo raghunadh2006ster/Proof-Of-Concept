@@ -46,7 +46,8 @@ class ViewController: UIViewController {
             let description = (wvm.rowDescription != nil && wvm.rowDescription!.count > 0) ? wvm.rowDescription : "No description avialable"
             cell.descriptionLabel.text = description
             if (wvm.imageHref != nil && wvm.imageHref!.count > 0) {
-                APIService.getImage(wvm.imageHref ?? "", 1) {(img, e, url) in
+                let imgUrl = wvm.imageHref!.removingPercentEncoding
+                APIService.getImage(imgUrl!, 1) {(img, e, url) in
                     if (img == nil) {return}
                     cell.img.image = img;
                 }
