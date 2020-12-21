@@ -13,6 +13,9 @@
 		CB657ECC259034CC00245C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657ECB259034CC00245C82 /* ViewController.swift */; };
 		CB657EDA25903BEB00245C82 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657ED925903BEB00245C82 /* Row.swift */; };
 		CB657EE125903C2400245C82 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657EE025903C2400245C82 /* APIService.swift */; };
+		CB657EE725903D7700245C82 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657EE625903D7700245C82 /* WelcomeViewModel.swift */; };
+		CB657EEB2590456900245C82 /* WelcomeTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657EEA2590456900245C82 /* WelcomeTableViewDataSource.swift */; };
+		CB657EEF2590459E00245C82 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB657EEE2590459E00245C82 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		CB657ECB259034CC00245C82 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB657ED925903BEB00245C82 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		CB657EE025903C2400245C82 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CB657EE625903D7700245C82 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		CB657EEA2590456900245C82 /* WelcomeTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTableViewDataSource.swift; sourceTree = "<group>"; };
+		CB657EEE2590459E00245C82 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				CB657EB52590341500245C82 /* AppDelegate.swift */,
-				CB657ECB259034CC00245C82 /* ViewController.swift */,
+				CB657EF32590462200245C82 /* Controllers */,
+				CB657EED2590459000245C82 /* TableViewCell */,
+				CB657EE525903D5E00245C82 /* ViewModel */,
 				CB657ED625903BAD00245C82 /* Model */,
 				CB657EDF25903C0F00245C82 /* Support */,
 				CB657EBE2590341800245C82 /* Assets.xcassets */,
@@ -81,6 +89,31 @@
 				CB657EE025903C2400245C82 /* APIService.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		CB657EE525903D5E00245C82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB657EE625903D7700245C82 /* WelcomeViewModel.swift */,
+				CB657EEA2590456900245C82 /* WelcomeTableViewDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CB657EED2590459000245C82 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CB657EEE2590459E00245C82 /* TableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CB657EF32590462200245C82 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CB657ECB259034CC00245C82 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB657EDA25903BEB00245C82 /* Row.swift in Sources */,
+				CB657EE725903D7700245C82 /* WelcomeViewModel.swift in Sources */,
+				CB657EEB2590456900245C82 /* WelcomeTableViewDataSource.swift in Sources */,
 				CB657ECC259034CC00245C82 /* ViewController.swift in Sources */,
 				CB657EE125903C2400245C82 /* APIService.swift in Sources */,
+				CB657EEF2590459E00245C82 /* TableViewCell.swift in Sources */,
 				CB657EB62590341500245C82 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
