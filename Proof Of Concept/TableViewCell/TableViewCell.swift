@@ -30,7 +30,7 @@ class TableViewCell: UITableViewCell {
     // image
     let img: UIImageView =  {
         let img = UIImageView()
-        img.backgroundColor = .black
+        img.backgroundColor = .green
         img.contentMode = .scaleAspectFill
         img.translatesAutoresizingMaskIntoConstraints = false
         img.layer.cornerRadius = 13
